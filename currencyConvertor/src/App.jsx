@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import useCurrencyInfo from './hooks/useCurrencyInfo'
-import { InputBox, Btn } from './components' 
+import { InputBox } from './components' 
 
 function App() {
 
@@ -32,13 +32,7 @@ function App() {
             }}
         >
             <div className="w-full">
-                <div>
-                    <Btn 
-                    text = "Click me"
-                    onClick = {() => alert("Button Clicked!")}
-                    className = " px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
-                    />
-                </div>
+                
                 <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
                     <form
                         onSubmit={(e) => {
